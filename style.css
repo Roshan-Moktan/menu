@@ -1,0 +1,209 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+
+    background: linear-gradient(
+        to bottom,
+        #e53ea0,
+        #f2b15b
+    );
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* MENU BOX */
+
+.menu-box{
+    background: #efefef;
+
+    width: 800px;
+
+    padding: 60px;
+
+    border-radius: 6px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* TITLE */
+
+h1{
+    font-family: 'Pacifico', cursive;
+
+    text-align: center;
+
+    font-size: 70px;
+
+    color: #333;
+
+    margin-bottom: 10px;
+}
+
+/* OPENING TEXT */
+
+.opening{
+    text-align: center;
+
+    font-style: italic;
+
+    color: #666;
+
+    margin-bottom: 40px;
+}
+
+/* SECTION */
+
+.section{
+    margin-bottom: 40px;
+}
+
+/* SECTION TITLE */
+
+.section h2{
+    font-size: 36px;
+
+    color: #333;
+
+    border-bottom: 2px solid #999;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 25px;
+}
+
+/* ITEM */
+
+.item{
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 25px;
+}
+
+/* ITEM TITLE */
+
+.item h3{
+    font-size: 28px;
+
+    color: #333;
+
+    margin-bottom: 5px;
+}
+
+/* DESCRIPTION */
+
+.item p{
+    font-size: 18px;
+
+    color: #666;
+
+    font-style: italic;
+}
+
+/* PRICE */
+
+.item span{
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+/* FOOTER */
+
+.footer{
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+/* FOOTER TEXT */
+
+.footer p{
+    font-size: 16px;
+
+    color: #666;
+
+    font-style: italic;
+
+    margin-bottom: 15px;
+}
+
+/* ICONS */
+
+.icons i{
+    font-size: 24px;
+
+    color: #333;
+
+    margin: 0 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.icons i:hover{
+    color: #e53ea0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 768px){
+
+    body{
+        padding: 20px;
+    }
+
+    .menu-box{
+        width: 100%;
+
+        padding: 30px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    .section h2{
+        font-size: 28px;
+    }
+
+    .item{
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .item h3{
+        font-size: 22px;
+    }
+
+    .item p{
+        font-size: 16px;
+    }
+
+    .item span{
+        font-size: 22px;
+    }
+
+}
